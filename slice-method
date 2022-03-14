@@ -1,0 +1,8 @@
+function sliceArray(anim, beginSlice, endSlice) {
+
+const arr = anim.slice(beginSlice, endSlice)
+return arr
+}
+
+const inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
+sliceArray(inputAnim, 1, 3);
