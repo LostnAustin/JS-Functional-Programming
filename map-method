@@ -1,0 +1,30 @@
+The map method iterates over each item in an array and returns a new array containing the results of calling the callback function on each element. It does this without mutating the original array.
+
+When the callback is used, it is passed three arguments. The first argument is the current element being processed. The second is the index of that element and the third is the array upon which the map method was called.
+
+
+
+//ES6 notation
+const ratings = watchList.map(({ Title: title, imdbRating: rating }) => ({title, rating}));
+
+
+
+
+IMPLEMENT MAPPING on a PROTOTYPE
+Write your own Array.prototype.myMap(), which should behave exactly like Array.prototype.map(). You should not use the built-in map method. The Array instance can be accessed in the myMap method using this.
+
+// The global variable
+const s = [23, 65, 98, 5];
+
+Array.prototype.myMap = function(callback) {
+  const newArray = [];
+  
+    for (let i=0; i< this.length; i++) {
+      newArray.push(callback(this[i]))
+    }
+  return newArray;
+};
+
+const new_s = s.myMap(function(item) {
+  return item * 2;
+});
