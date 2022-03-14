@@ -1,3 +1,6 @@
+SPLICE mutates the original array. It's good practice to use SLICE to create a new array with the needed data instead.
+
+
 function sliceArray(anim, beginSlice, endSlice) {
 
 const arr = anim.slice(beginSlice, endSlice)
@@ -6,3 +9,15 @@ return arr
 
 const inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
 sliceArray(inputAnim, 1, 3);
+
+
+
+
+
+function nonMutatingSplice(cities) {
+//grab starting at index0, up to index3 and put in a new array, avoiding mutation of original array
+  return cities.slice(0,3);
+}
+
+const inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
+nonMutatingSplice(inputCities);
