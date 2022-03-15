@@ -1,0 +1,18 @@
+Return a new array containing only the positive integers.
+
+
+//ES6 notation
+// set a variable num to check that it is greater than 0
+// the number must be positive integer if its remainder is 0, after dividing against itself (with a forced parseInt() check function)
+
+
+
+const squareList = arr => {
+    return arr
+          .filter(num => num > 0 && num % parseInt(num) === 0)
+          .map(num => (num ** 2));
+
+};
+
+const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+console.log(squaredIntegers);
