@@ -11,7 +11,18 @@ checkPositive([1, 2, 3, -4, 5]);
 
 //ES6
 function checkPositive(arr) {
- 
   return arr.every(val => val > 0);
 }
+checkPositive([1, 2, 3, -4, 5]);
+
+
+
+
+
+SOME()
+
+function checkPositive(arr) {
+ return arr.some(value => value > 0)
+}
+
 checkPositive([1, 2, 3, -4, 5]);
