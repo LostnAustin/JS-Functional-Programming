@@ -1,0 +1,10 @@
+Split the string by non-word characters and then create a sentence using those words.
+
+
+
+function sentensify(str) {
+  return str.split(/\W/)
+            .join(" ")
+}
+
+sentensify("May-the-force-be-with-you");
