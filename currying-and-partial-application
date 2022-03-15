@@ -1,0 +1,24 @@
+Currying uses the arguements of one function for the next function and continues in this method. This is useful in your program if you can't supply all the arguments to a function at one time. You can save each function call into a variable, which will hold the returned function reference that takes the next argument when it's available. 
+
+Partial application is applying as few arguments to a function at a time and returing another function that is applied to more arguemnts
+
+
+
+function add(x) {
+  return y => z => x + y + z;
+}
+
+add(10)(20)(30);
+
+
+
+The above is the same as:
+
+function add(x) { 
+  return function(y) {
+    return function(z) {
+      return x + y + z;
+    };
+  };
+}
+add(10)(20)(30);
