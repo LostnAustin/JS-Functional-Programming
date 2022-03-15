@@ -1,0 +1,11 @@
+
+function urlSlug(title) {
+
+return title.toLowerCase()
+            .split(' ')
+            .filter(substr => substr !== "")    //filter words to remove any extra spaces, eg) someone double spaces between words
+            .join('-')
+
+}
+
+urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone");
