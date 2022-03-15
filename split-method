@@ -1,0 +1,9 @@
+Splits an array of strings into a new array using either `str.split('')` or regex `str.split(/ /`
+
+function splitify(str) {
+ 
+  // string method splits into a new array
+  return str.split(/\W/);
+}
+
+splitify("Hello World,I-am code");
