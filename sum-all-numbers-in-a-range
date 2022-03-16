@@ -1,0 +1,20 @@
+function sumAll(arr) {
+//find and create max and min variables with reduce
+ var max = arr.reduce(function(a, b) {
+  return Math.max(a, b);
+});
+var min = arr.reduce(function(a, b) {
+  return Math.min(a, b);
+});
+
+//iterate through array and sum
+var solution = 0;
+
+for(var i = min; i <= max; i++) {
+  solution += i;
+  console.log(solution);
+}
+return solution
+}
+
+sumAll([5, 10]);
