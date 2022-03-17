@@ -1,6 +1,17 @@
 SPLICE mutates the original array. It's good practice to use SLICE to create a new array with the needed data instead.
 
 
+eg) Slice array so that it sums to 10
+
+const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+arr.splice(0, 1)    //index 0, remove 1
+arr.splice(3, 4)    //on modified arr, index 3, remove 4
+
+console.log(arr);
+
+
+
+
 function sliceArray(anim, beginSlice, endSlice) {
 
 const arr = anim.slice(beginSlice, endSlice)
