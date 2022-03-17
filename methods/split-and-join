@@ -1,5 +1,18 @@
-Split the string by non-word characters and then create a sentence using those words.
+Splitting
 
+function splitify(str) {
+ 
+  // string method splits into a new array
+  return str.split(/\W/);
+}
+
+splitify("Hello World,I-am code");
+
+
+
+
+
+Split the string by non-word characters and then create a sentence using those words.
 
 
 function sentensify(str) {
