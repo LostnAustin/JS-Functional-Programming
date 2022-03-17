@@ -3,7 +3,7 @@ Split the string by non-word characters and then create a sentence using those w
 
 
 function sentensify(str) {
-  return str.split(/\W/)
+  return str.split(/\W/)         //Using \W for any non-word characters
             .join(" ")
 }
 
