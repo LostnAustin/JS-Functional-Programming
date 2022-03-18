@@ -32,3 +32,19 @@ function nonMutatingSplice(cities) {
 
 const inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
 nonMutatingSplice(inputCities);
+
+
+
+
+
+
+SLICE WITH MULTIPLE PARAMS
+EG) numbers.splice(startIndex, amountToDelete, 'addedElement1', 'addedElement2')
+
+
+function htmlColorNames(arr) {
+  arr.splice(arr[0], 2, 'DarkSalmon', 'BlanchedAlmond')
+  return arr;
+}
+
+console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
