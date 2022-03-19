@@ -1,0 +1,14 @@
+We can use dot notation and bracket notation to add key-value pairs to JS objects
+
+
+const tekkenCharacter = {
+  player: 'Hwoarang',
+  fightingStyle: 'Tae Kwon Doe',
+  human: true
+};
+
+tekkenCharacter.origin = 'South Korea';
+This uses dot notation. If you were to observe the tekkenCharacter object, it will now include the origin property. Hwoarang also had distinct orange hair. You can add this property with bracket notation by doing:
+
+tekkenCharacter['hair color'] = 'dyed orange';
+Bracket notation is required if your property has a space in it or if you want to use a variable to name the property. I
