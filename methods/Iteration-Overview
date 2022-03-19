@@ -1,5 +1,25 @@
 Several Different methods can be used with slightly different ways to achieve results.
-1. every()
+1. for () {{}} loop. (simplest form)
 2. forEach()
 3. map()
 4. for loop
+5. every()
+
+
+
+
+
+//Iterate through array checking for presence of elem, and remove if is present.
+
+
+function filteredArray(arr, elem) {
+  let newArr = [];
+  for (let i=0; i < arr.length; i++) {
+    if (arr[i].indexOf(elem) == -1) {                 //index -1 for non-existent
+    newArr.push(arr[i])
+  }
+  }
+  return newArr;
+}
+
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
