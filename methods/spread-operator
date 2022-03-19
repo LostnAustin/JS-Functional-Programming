@@ -1,1 +1,13 @@
+With ES6 Spread operators
+we can copy the entire contents into a new array with ` [...array] `
 
+
+Also easily combine arrays:
+
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence = ['learning', ...fragment, 'is', 'fun']; 
+  return sentence;
+}
+
+console.log(spreadOut());
