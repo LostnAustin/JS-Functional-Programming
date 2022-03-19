@@ -1,0 +1,5 @@
+Several Different methods can be used with slightly different ways to achieve results.
+1. every()
+2. forEach()
+3. map()
+4. for loop
