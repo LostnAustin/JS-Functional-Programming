@@ -11,4 +11,38 @@ tekkenCharacter.origin = 'South Korea';
 This uses dot notation. If you were to observe the tekkenCharacter object, it will now include the origin property. Hwoarang also had distinct orange hair. You can add this property with bracket notation by doing:
 
 tekkenCharacter['hair color'] = 'dyed orange';
-Bracket notation is required if your property has a space in it or if you want to use a variable to name the property. I
+//Bracket notation is required if your property has a space in it or if you want to use a variable to name the property. 
+
+
+
+
+CHECK IF AN OBJECT HAS A PROPERTY
+two methods available: 
+1.  users.hasOwnProperty('Alan');
+2.  'Alan' in users;
+
+check that the object has all four names
+let users = {
+  Alan: {
+    age: 27,
+    online: true
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: true
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
+
+function isEveryoneHere(userObj) {
+  return ['Alan','Jeff','Sarah','Ryan'].every(name => userObj.hasOwnProperty(name))
+}
+
+console.log(isEveryoneHere(users));
